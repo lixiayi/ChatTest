@@ -13,6 +13,8 @@
 		0813D1D22114A34A00D0DEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0813D1D12114A34A00D0DEC5 /* Assets.xcassets */; };
 		0813D1D52114A34A00D0DEC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0813D1D32114A34A00D0DEC5 /* LaunchScreen.storyboard */; };
 		0813D1D82114A34A00D0DEC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D1D72114A34A00D0DEC5 /* main.m */; };
+		0813D1E02114A47100D0DEC5 /* ChatMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D1DF2114A47100D0DEC5 /* ChatMainVC.m */; };
+		0813D1E32114A58000D0DEC5 /* TapScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D1E22114A58000D0DEC5 /* TapScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		0813D1D42114A34A00D0DEC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0813D1D62114A34A00D0DEC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0813D1D72114A34A00D0DEC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0813D1DE2114A47100D0DEC5 /* ChatMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatMainVC.h; sourceTree = "<group>"; };
+		0813D1DF2114A47100D0DEC5 /* ChatMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatMainVC.m; sourceTree = "<group>"; };
+		0813D1E12114A58000D0DEC5 /* TapScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapScrollView.h; sourceTree = "<group>"; };
+		0813D1E22114A58000D0DEC5 /* TapScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				0813D1C92114A34900D0DEC5 /* AppDelegate.m */,
 				0813D1CB2114A34900D0DEC5 /* ViewController.h */,
 				0813D1CC2114A34900D0DEC5 /* ViewController.m */,
+				0813D1DE2114A47100D0DEC5 /* ChatMainVC.h */,
+				0813D1DF2114A47100D0DEC5 /* ChatMainVC.m */,
+				0813D1E12114A58000D0DEC5 /* TapScrollView.h */,
+				0813D1E22114A58000D0DEC5 /* TapScrollView.m */,
 				0813D1CE2114A34900D0DEC5 /* Main.storyboard */,
 				0813D1D12114A34A00D0DEC5 /* Assets.xcassets */,
 				0813D1D32114A34A00D0DEC5 /* LaunchScreen.storyboard */,
@@ -141,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0813D1E32114A58000D0DEC5 /* TapScrollView.m in Sources */,
 				0813D1CD2114A34900D0DEC5 /* ViewController.m in Sources */,
+				0813D1E02114A47100D0DEC5 /* ChatMainVC.m in Sources */,
 				0813D1D82114A34A00D0DEC5 /* main.m in Sources */,
 				0813D1CA2114A34900D0DEC5 /* AppDelegate.m in Sources */,
 			);

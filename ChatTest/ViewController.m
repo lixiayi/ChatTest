@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ChatMainVC.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"chat";
+    
+    [self createRightBarButton];
+}
+
+- (void)createRightBarButton {
+    
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"push" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, 60, 40);
+    [button addTarget:self action:@selector(rightBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
+- (void)rightBtnClick:(UIButton *)sender{
+    ChatMainVC *main = [[ChatMainVC alloc] init];
+    [self.navigationController pushViewController:main animated:YES];
+    
 }
 
 

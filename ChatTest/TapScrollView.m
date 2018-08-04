@@ -65,8 +65,6 @@
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     int index =  scrollView.contentOffset.x / scrollView.frame.size.width;
-    
-    NSLog(@"index--->%d", index);
     if (0 == index) {
         self.indicatorView.frame = CGRectMake(scrollView.frame.size.width / 2, 0, scrollView.frame.size.width/2, 5);
     } else if (1 == index) {
@@ -77,7 +75,6 @@
 
 - (void)tempBtnClick:(UIButton *)sender {
     long index = sender.tag;
-    NSLog(@"index--->%ld", index);
     if (1000 == index) {
         [UIView animateWithDuration:0.2 animations:^{
             [self.indicatorScrollView scrollRectToVisible:CGRectMake(0, 0, self.indicatorScrollView.frame.size.width/2, 5) animated:YES];
